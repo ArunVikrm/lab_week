@@ -28,7 +28,7 @@ scene.background = camera.backgroundTexture;
 
 // Load a 3D model to place within our group (using ThreeJS's GLTF loader)
 // Pass our loading manager in to ensure the progress bar works correctly
-const comcastSrc = new URL('../assets/logo_6.glb', import.meta.url).href;
+const comcastSrc = new URL('./assets/logo_6.glb', import.meta.url).href;
 const gltfLoader = new THREE.GLTFLoader(manager);
 gltfLoader.load(comcastSrc, (gltf) => {
   // Position the loaded content to overlay user's face
