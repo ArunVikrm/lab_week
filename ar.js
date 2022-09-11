@@ -41,7 +41,7 @@ gltfLoader.load(comcastSrc, (gltf) => {
   console.log('An error ocurred loading the GLTF model');
 });
 
-const circleSrc = new URL('../assets/circles_1.glb', import.meta.url).href;
+const circleSrc = new URL('./assets/circles_1.glb', import.meta.url).href;
 gltfLoader.load(circleSrc, (gltf) => {
   // Position the loaded content to overlay user's face
   gltf.scene.position.set(-0.7, -0.4, -3);
@@ -53,7 +53,7 @@ gltfLoader.load(circleSrc, (gltf) => {
   console.log('An error ocurred loading the GLTF model');
 });
 
-const circlepinkeSrc = new URL('../assets/circles_1.glb', import.meta.url).href;
+const circlepinkeSrc = new URL('./assets/circles_1.glb', import.meta.url).href;
 gltfLoader.load(circlepinkeSrc, (gltf) => {
     // Position the loaded content to overlay user's face
     gltf.scene.position.set(0.7, 0.9, -3);
